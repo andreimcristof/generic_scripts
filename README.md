@@ -1,7 +1,7 @@
 # AWS scripts
 
 ### Dynamo DB
-batch-import: Import items into your DynamoDB, in batches of 25. 
+batch-import: Import items into your DynamoDB, in batches of 25 (max batch size allowed by DynamoDB). 
 
 ----------------------------
 
