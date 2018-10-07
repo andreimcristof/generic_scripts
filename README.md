@@ -1,6 +1,9 @@
-# AWS Dynamo DB scripts
+# AWS scripts
 
-Import items into your DynamoDB, in batches of 25. 
+### Dynamo DB
+batch-import: Import items into your DynamoDB, in batches of 25. 
+
+----------------------------
 
 ### Credentials
 Credentials are provided with the .dotenv package and being read from process.env, so you need to create the .env file and input your credentials there.
