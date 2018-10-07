@@ -1,0 +1,33 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreimcristof/traveladvisor_scripts.git"
+  },
+  "author": "Andrei Marius Cristof",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreimcristof/traveladvisor_scripts/issues"
+  },
+  "homepage": "https://github.com/andreimcristof/traveladvisor_scripts#readme",
+  "dependencies": {
+    "aws-sdk": "^2.329.0",
+    "dotenv": "^6.0.0",
+    "lodash": "^4.17.11",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
