@@ -9,6 +9,7 @@ class AWSCredentials {
         this.doc = new AWS.DynamoDB.DocumentClient({
             convertEmptyValues : true
         });
+        this.s3 = new AWS.S3();
     }
 }
 

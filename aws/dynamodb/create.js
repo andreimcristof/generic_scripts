@@ -3,10 +3,10 @@
 require('dotenv').config();
 const rx = require('rxjs');
 const rxop = require('rxjs/operators');
-const AWSCredentials = require('./aws');
-const Data = require('./data');
+const AWSCredentials = require('../aws');
+const Data = require('../../data');
 
-class BatchImport extends AWSCredentials {
+class DynamoDBCreate extends AWSCredentials {
     constructor() {
         super();
         this.tableName = process.env.DynamoDB_DataTable;
@@ -51,6 +51,6 @@ class BatchImport extends AWSCredentials {
     }
 }
 
-module.exports = BatchImport;
+module.exports = DynamoDBCreate;
 
   
