@@ -7,20 +7,19 @@ const AWSCredentials = require('../aws');
 const Data = require('../../data');
 
 class DynamoDBCreate extends AWSCredentials {
-    constructor() {
+    constructor(options) {
         super();
-        this.tableName = process.env.DynamoDB_DataTable;
+        this.options = options;
         this.data = new Data();
     }
     
-    run() {
-        this.data.fetchList().then(res => {
+    createAll() {
+        this.data.fetchList().then( res => {
             let lst = JSON.parse(res);
             let objLst = this.buildInsertList(lst);
             const source = rx.from(objLst);
             
-            let batchSize = 25;
-            const p = source.pipe(rxop.bufferCount(batchSize));
+            const p = source.pipe(rxop.bufferCount(this.options.batchSize));
 
             p.subscribe(this.writeToDb.bind(this), console.error, console.info);            
         })
@@ -31,7 +30,7 @@ class DynamoDBCreate extends AWSCredentials {
             RequestItems: {}
         };
 
-        importParams.RequestItems[this.tableName] = lst;
+        importParams.RequestItems[this.options.tableName] = lst;
 
         this.doc.batchWrite(importParams, (err, data) => {
             console.error('batchwriteerr', err);
