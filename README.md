@@ -2,7 +2,7 @@
 
 ### Dynamo DB
 - DynamoDBCreate: Import items into your DynamoDB, in batches of 25 (max batch size allowed by DynamoDB). 
-- DynamoDBRead: Read full column (scan) from DynamoDB by passing in the batch size (DynamoDB will truncate responses up to 1MB, so figure out roughly what batch size will be fine for that amount in your table).
+- DynamoDBRead: Read full column (scan) from DynamoDB by passing in the batch size (DynamoDB will truncate responses up to 1MB, so figure out roughly what batch size will be fine for that amount in your table). Use this with small tables, since a scan does a full table read.
 
 
 
