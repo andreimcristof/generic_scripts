@@ -7,7 +7,7 @@
 
 
 ### Credentials
-Credentials are provided with the .dotenv package and being read from process.env, so you need to create the .env file and input your credentials there.
+Credentials are provided with the .dotenv package and being read from process.env, so you need to create the .env file and input there your credentials, table name, etc.
 
 ### How to use 
 See index.js for examples. 
