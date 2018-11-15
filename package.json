@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andreimcristof/traveladvisor_scripts.git"
+    "url": "git+https://github.com/andreimcristof/generic_scripts.git"
   },
   "author": "Andrei Marius Cristof",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andreimcristof/traveladvisor_scripts/issues"
+    "url": "https://github.com/andreimcristof/generic_scripts/issues"
   },
-  "homepage": "https://github.com/andreimcristof/traveladvisor_scripts#readme",
+  "homepage": "https://github.com/andreimcristof/generic_scripts#readme",
   "dependencies": {
     "aws-sdk": "^2.329.0",
     "dotenv": "^6.0.0",
